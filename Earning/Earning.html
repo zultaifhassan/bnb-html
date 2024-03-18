@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Earning</title>
+    <link rel="stylesheet" href="../Home/home.css" />
+    <link rel="stylesheet" href="earning.css">
+  </head>
+  <body>
+    <div class="navbar-container">
+      <div class="max-width">
+        <nav class="navigation-bar">
+          <div class="navbar-left">
+            <a href="/Home/Home.html">
+              <img src="/Images/logo.png" alt="" />
+            </a>
+            <div class="navbar-options" ref="{navRef}">
+              <ul>
+                <li>
+                  <a href="/Home/Home.html"> Home </a>
+                </li>
+                <li>
+                  <a href="/Wallet/Wallet.html"> Wallet </a>
+                </li>
+                <li>
+                  <a href="/Earning/Earning.html" id="active"> Earnings </a>
+                </li>
+              </ul>
+              <X class="hamberger-close" color="#fff" size="{15}" />
+            </div>
+          </div>
+          <div class="navbar-right">
+            <button class="navbar-btn-first">Contact Us</button>
+            <button class="navbar-btn-second">
+              <span>Start Building</span>
+              <!-- {/* <img src="/home/icons/arrow.png" alt="" /> */} -->
+              <!-- <ArrowUpRight size="{20}" /> -->
+            </button>
+          </div>
+          <AlignJustify class="hamburger" color="#fff" />
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- Earning Page Content -->
+
+    <div>
+        <div class="first-sec-earning max-width">
+          <div class="first-sec-leftside">
+            <div class="genstatictics-side">
+              <h1>General Statistics</h1>
+              <button>Withdraw Earnings <ArrowUpRight size={20} /></button>
+            </div>
+            <div class='genstatictics-boxes'>
+              <div class='genstatictics-boxes-1'>
+                <h3>Total Balance Since Join</h3>
+                <h2>$3904.40</h2>
+              </div>
+              <div class='genstatictics-boxes-1'>
+                <h3>Today's Earning</h3>
+                <div class='amount-and-arrow'>
+                  <h2>$20.008</h2>
+                  <img src='/home/icons/red.png' alt='' />
+                </div>
+              </div>
+              <div class='genstatictics-boxes-1'>
+                <h3>All Time Earning</h3>
+                <div class='amount-and-arrow'>
+                  <h2>$23240.8</h2>
+                  <img src='/home/icons/blue.png' alt='' />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="first-sec-rightside">
+            <div class="right-side-walletaddress">
+              <h3>Wallet Address</h3>
+              <p>0xe3ba0072d1da98269133852fba179541</p>
+            </div>
+            <div class="right-side-walletavailable">
+              <p>Balance Available for Use</p>
+              <h3>$500.93</h3>
+              <button>Withdraw balance <ArrowUpRight size={20} /></button>
+            </div>
+          </div>
+        </div>
+        <div class="second-sec-earningslider max-width">
+  
+          <div class="second-sec-rightside">
+            <div class='session-timer'>
+              <p>Session Timer</p>
+              <div class='center-timing-number'>
+                <h1>10:59:40</h1>
+                <div class='hour-minutes-seconds'>
+                  <p>Hours</p>
+                  <p>Minutes</p>
+                  <p>Secs</p>
+                </div>
+                <h5>#12345</h5>
+              </div>
+            </div>
+            <button>Knock <ArrowUpRight size={20} /></button>
+          </div>
+          <div class="second-sec-leftside">
+            <h2>Earning History</h2>
+            <EaningSlider />
+          </div>
+  
+        </div>
+        <div class='third-sec-adserning-outer'>
+          <div class='third-sec-adserning max-width'>
+            <h1>Space For Ads</h1>
+          </div>
+        </div>
+  
+      <div class='fouth-section-outer'>
+        <div class='fouth-section-earningtable max-width'>
+          <h1>Withdrawal History</h1>
+          <div class='main-table-earningpage'>
+            <table>
+              <tr>
+                <th class="activity-active"><span>Date</span> <p>Activity</p></th>
+                <th class='main-table-time'>Time</th>
+                <th class='main-table-time'>Transaction ID</th>
+                <th>Amount</th>
+                <th class='main-table-time'>Status</th>
+                <th>Action</th>
+              </tr>
+              <tr>
+                <td class='date-recieved'><p>Recieved</p><h6>12/02/24</h6></td>
+                <td class='main-table-time'>12:33 PM</td>
+                <td class='main-table-time'>x43wtrew66-24</td>
+                <td>$5000</td>
+                <td class='recieved-batch'><span>Recieved</span></td>
+                <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td class='date-recieved'><p>Recieved</p><h6>12/02/24</h6></td>
+                <td class='main-table-time'>12:33 PM</td>
+                <td class='main-table-time'>x43wtrew66-24</td>
+                <td>$5000</td>
+                <td class='recieved-batch'><span>Recieved</span></td>
+                <td><button>View</button></td>
+              </tr>
+              <tr>
+                <td class='date-recieved'><p>Recieved</p><h6>12/02/24</h6></td>
+                <td class='main-table-time'>12:33 PM</td>
+                <td class='main-table-time'>x43wtrew66-24</td>
+                <td>$5000</td>
+                <td class='recieved-batch'><span>Recieved</span></td>
+                <td><button>View</button></td>
+              </tr>
+  
+            </table>
+          </div>
+        </div>
+        </div>
+  
+        <div class="faq-outer-container faq-earning-page">
+          <div class="max-width">
+            <div class="faq-inner-container">
+              <h1>
+                Frequently Asked <span>Questions</span>
+              </h1>
+              <p>
+                Discover answers to common questions about <br /> our
+                cryptocurrency platform
+              </p>
+  
+              <div class="faqs">
+                {faqData.map((faq, index) => {
+                  return (
+                    <div
+                      class="faq"
+                      style={{
+                        border: `${index + 1 === activeFaq
+                          ? "0.01rem solid #FFDD2D"
+                          : "1px solid transparent"
+                          }`,
+                        background: `${index + 1 === activeFaq
+                          ? "linear-gradient(90deg, rgba(255, 221, 45, 0.05) 0%, rgba(255, 221, 45, 0) 100%)"
+                          : "transparent"
+                          }`,
+                      }}
+                    >
+                      <div
+                        class="faq-head"
+                        onClick={() => setActiveFaq(++index)}
+                        style={{
+                          color: `${index + 1 === activeFaq ? "#FFDD2D" : "#CCCCCC"
+                            }`,
+                        }}
+                      >
+                        {faq.title}{" "}
+                        <div class="faq-icon-container">
+                          {index + 1 === activeFaq ? (
+                            <Minus color="#000" />
+                          ) : (
+                            <Plus color="#000" />
+                          )}
+                        </div>
+                      </div>
+                      <div
+                        class="faq-description"
+                        style={{
+                          maxHeight: `${index + 1 === activeFaq ? "200px" : "0px"
+                            }`,
+                        }}
+                      >
+                        <div class='faq-description-inner'>
+  
+                          {faq.description}
+                        </div>
+  
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+
+    <!--footer design  -->
+
+    <div class="footer">
+      <div class="max-width">
+        <div class="footer-inner">
+          <div class="footer-inner-top">
+            <div class="footer-left">
+              <a href="/Home/Home.html">
+                <img class="footer-logo" src="/Images/logo.png" alt="" />
+              </a>
+              <p class="footer-left-para">
+                Join our Smart Chain Sweeps takes platform and participate in
+                gas fee giveaways to maximize rewards for your Binance Smart
+                Chain wallet.
+              </p>
+              <div class="footer-social-icons">
+                <a>
+                  <img src="/Images/Footer/x.png" alt="" />
+                </a>
+                <a>
+                  <img src="/Images/Footer/fb.svg" alt="" />
+                </a>
+                <a>
+                  <img src="/Images/Footer/insta.svg" alt="" />
+                </a>
+                <a>
+                  <img src="/Images/Footer/linkedIn.svg" alt="" />
+                </a>
+              </div>
+            </div>
+            <div class="footer-right">
+              <div class="footer-right-links">
+                <div class="footer-right-wallet-earning-support">
+                  <a class="footer-head-link">
+                    Wallet
+                    <div class="wallet-underline"></div>
+                  </a>
+                  <a class="footer-sub-link">Mobile App</a>
+                  <a class="footer-sub-link">Browser Extension</a>
+                </div>
+                <div class="footer-right-wallet-earning-support">
+                  <a class="footer-head-link">
+                    Earnings
+                    <div class="earning-underline"></div>
+                  </a>
+                  <a class="footer-sub-link">FAQS</a>
+                  <a class="footer-sub-link">Contact Us</a>
+                </div>
+                <div class="footer-right-wallet-earning-support">
+                  <a class="footer-head-link">
+                    Support
+                    <div class="support-underline"></div>
+                  </a>
+                  <a class="footer-sub-link">Terms & Conditions</a>
+                  <a class="footer-sub-link">Contact Us</a>
+                </div>
+              </div>
+              <div class="footer-right-contacts">
+                <div class="footer-right-contacts-top">
+                  <a class="footer-head-link">Contact Us</a>
+                  <a class="footer-sub-link">Email Address</a>
+                  <div class="footer-email-input">
+                    <input type="email" placeholder="example@gmail.com" />
+                    <img src="/Images/Footer/arrow-right.png" alt="" />
+                  </div>
+                </div>
+
+                <div class="google-apple-stores">
+                  <a>
+                    <img src="/Images/Footer/google.png" alt="" />
+                  </a>
+                  <a>
+                    <img src="/Images/Footer/apple.png" alt="" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-inner-bottom">
+            <p>© 2024 BNB10. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive Footer -->
+    <div class="res-footer">
+      <div class="res-footer-inner">
+        <div class="footer-left">
+          <a href="/Home/Home.html">
+            <img class="footer-logo" src="/Images/logo.png" alt="" />
+          </a>
+          <p class="footer-left-para">
+            Join our Smart Chain Sweeps takes platform and participate in gas
+            fee giveaways to maximize rewards for your Binance Smart Chain
+            wallet.
+          </p>
+
+          <div class="footer-right-wallet-earning-support">
+            <a class="footer-head-link">
+              Wallet
+              <div class="wallet-underline"></div>
+            </a>
+            <a class="footer-head-link">
+              Earnings
+              <div class="earning-underline"></div>
+            </a>
+            <a class="footer-head-link">
+              Support
+              <div class="support-underline"></div>
+            </a>
+          </div>
+
+          <p class="footer-community">Community</p>
+
+          <div class="footer-social-icons">
+            <a>
+              <img src="/home/icons/x.png" alt="" />
+            </a>
+            <a>
+              <img src="/home/icons/fb.svg" alt="" />
+            </a>
+            <a>
+              <img src="/home/icons/insta.svg" alt="" />
+            </a>
+            <a>
+              <img src="/home/icons/linkedIn.svg" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div class="res-footer-right">
+          <div class="google-apple-stores">
+            <a>
+              <img src="/home/icons/google.png" alt="" />
+            </a>
+            <a>
+              <img src="/home/icons/apple.png" alt="" />
+            </a>
+          </div>
+
+          <div class="footer-right-contacts-top">
+            <a class="footer-head-link">Contact Us</a>
+            <div class="footer-email-input">
+              <input type="email" placeholder="example@gmail.com" />
+              <img src="/home/icons/arrow-right.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-inner-bottom">
+        <p>© 2024 BNB10. All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
