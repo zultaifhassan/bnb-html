@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bnb-bitcoin</title>
     <link rel="stylesheet" href="home.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <div class="navbar-container">
@@ -14,7 +23,7 @@
             <a href="/Home/Home.html">
               <img src="/Images/logo.png" alt="" />
             </a>
-            <div class="navbar-options" ref="{navRef}">
+            <div class="navbar-options">
               <ul>
                 <li>
                   <a href="/Home/Home.html" id="active"> Home </a>
@@ -26,18 +35,23 @@
                   <a href="/Earning/Earning.html"> Earnings </a>
                 </li>
               </ul>
-              <X class="hamberger-close" color="#fff" size="{15}" />
+              <span class="material-symbols-outlined hamberger-close">
+                close
+              </span>
             </div>
           </div>
           <div class="navbar-right">
             <button class="navbar-btn-first">Contact Us</button>
             <button class="navbar-btn-second">
               <span>Start Building</span>
-              <!-- <ArrowUpRight size="{20}" /> -->
-              <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-arrow-16.png">
+              <span class="material-symbols-outlined" color="#000">
+                arrow_outward
+              </span>
             </button>
           </div>
-          <AlignJustify class="hamburger" color="#fff" />
+          <button type="button" class="hamburger">
+            <span></span>
+          </button>
         </nav>
       </div>
     </div>
@@ -51,15 +65,17 @@
             Say Goodbye <br />to Gas <span>Fees!</span>
           </h1>
           <p class="home-banner-main-para">
-            Start now by providing your wallet address. Enjoy free BNB gas fee giveaways for your transactions.
+            Start now by providing your wallet address. Enjoy free BNB gas fee
+            giveaways for your transactions.
           </p>
 
           <div class="home-banner-buttons">
             <button class="navbar-btn-first"><span>Learn More</span></button>
             <button class="navbar-btn-second">
-              <span>Book a Demo</span>
-              {/* <img src="/home/icons/arrow.png" alt="" /> */}
-              <ArrowUpRight size={20} />
+              <span>Start Building</span>
+              <span class="material-symbols-outlined" color="#000">
+                arrow_outward
+              </span>
             </button>
           </div>
         </div>
@@ -82,9 +98,7 @@
           <div class="why-choose-us-inner">
             <img src="/Images/choose.png" alt="" />
             <div class="why-choose-us-inner-content">
-              <h1>
-                why <span>choose</span> us?
-              </h1>
+              <h1>why <span>choose</span> us?</h1>
               <p>
                 Experience Unrivaled Benefits with “BNB10” Your Ultimate
                 Destination for Gas Fee Giveaways and Wallet Rewards on the
@@ -176,7 +190,121 @@
             </div>
           </div>
           <div class="home-page-slider">
-            <HomeSlider />
+            <div class="home-Slider-main">
+              <div class="home-slider-inner">
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img src="/Images/icons/money.png" alt="" />
+                          </div>
+                          <h1>Gas Fee Savings</h1>
+                          <p>
+                            Users can participate in gas fee giveaways, reducing
+                            the cost of transactions on the Binance Smart Chain.
+                            This incentivizes wallet holders to engage with the
+                            platform and benefit from reduced fees.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img
+                              src="/Images/icons/colored-wallet.png"
+                              alt="" />
+                          </div>
+                          <h1>Enhanced Wallet Engagement</h1>
+                          <p>
+                            By fulfilling certain conditions, users can qualify
+                            for gas fee giveaways. This encourages active
+                            participation and engagement with their BSC wallets,
+                            fostering a sense of community and involvement in
+                            the platform.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img src="/Images/icons/finance.png" alt="" />
+                          </div>
+                          <h1>Financial Accessibility</h1>
+                          <p>
+                            Gas fees can be a barrier for some users to engage
+                            with blockchain transactions. Bnb10's gas fee
+                            giveaways make transactions more affordable,
+                            promoting financial inclusivity and accessibility
+                            within the Binance Smart Chain ecosystem.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img src="/Images/icons/centric.png" alt="" />
+                          </div>
+                          <h1>User-Centric Design</h1>
+                          <p>
+                            The website's design, structured around three main
+                            pages with distinct purposes, prioritizes user
+                            experience. Clear navigation and focused content
+                            ensure that users can easily find information
+                            relevant to gas fee giveaways and wallet conditions.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img src="/Images/icons/law.png" alt="" />
+                          </div>
+                          <h1>Transparency and Fairness</h1>
+                          <p>
+                            By specifying certain conditions for eligibility,
+                            Bnb10 ensures transparency and fairness in its gas
+                            fee giveaway process. Users understand the criteria
+                            for participation, fostering trust and confidence in
+                            the platform.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="home-slider-content">
+                        <div class="middle-card middlecard-1">
+                          <div class="middle-card-icon">
+                            <img src="/Images/icons/community.png" alt="" />
+                          </div>
+                          <h1>Community Building</h1>
+                          <p>
+                            Bnb10's mission of providing gas fee giveaways
+                            fosters a community of Binance Smart Chain users who
+                            share common interests in reducing transaction
+                            costs. This community engagement can lead to
+                            collaboration, knowledge sharing, and networking
+                            opportunities among users.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -216,62 +344,97 @@
       <div class="faq-outer-container">
         <div class="max-width">
           <div class="faq-inner-container">
-            <h1>
-              Frequently Asked <span>Questions</span>
-            </h1>
+            <h1>Frequently Asked <span>Questions</span></h1>
             <p>
-              Discover answers to common questions about <br /> our
-              cryptocurrency platform
+              Discover answers to common questions about <br />
+              our cryptocurrency platform
             </p>
 
-            <div class="faqs">
-              {faqData.map((faq, index) => {
-                return (
-                  <div
-                    class="faq"
-                    style={{
-                      border: `${index + 1 === activeFaq
-                        ? "0.01rem solid #FFDD2D"
-                        : "1px solid transparent"
-                        }`,
-                      background: `${index + 1 === activeFaq
-                        ? "linear-gradient(90deg, rgba(255, 221, 45, 0.05) 0%, rgba(255, 221, 45, 0) 100%)"
-                        : "transparent"
-                        }`,
-                    }}
-                  >
-                    <div
-                      class="faq-head"
-                      onClick={() => setActiveFaq(++index)}
-                      style={{
-                        color: `${index + 1 === activeFaq ? "#FFDD2D" : "#CCCCCC"
-                          }`,
-                      }}
-                    >
-                      {faq.title}{" "}
-                      <div class="faq-icon-container">
-                        {index + 1 === activeFaq ? (
-                          <Minus color="#000" />
-                        ) : (
-                          <Plus color="#000" />
-                        )}
-                      </div>
-                    </div>
-                    <div
-                      class="faq-description"
-                      style={{
-                        maxHeight: `${index + 1 === activeFaq ? "200px" : "0"
-                          }`,
-                      }}
-                    >
-                      <div class="faq-description-inner">
-                        {faq.description}
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                What is Bnb10 and how does it provide gas fee giveaways for
+                Binance Smart Chain (BSC) transactions?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
+            </div>
 
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                How can I apply for gas fee giveaways on Bnb10?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                What factors determine eligibility for gas fee giveaways on
+                Bnb10?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                How often are gas fee giveaways provided on Bnb10?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                Can my wallet recive gas fee giveaways multiple times on Bnb10?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-inner-detail">
+              <button class="accordion">
+                How can i track the status of my gas fee giveways request om
+                Bnb10?
+              </button>
+              <div class="panel">
+                <p>
+                  Bnb10 is a platform dedicated to providing gas fee giveaways
+                  for transactions on the Binance Smart Chain (BSC). Our mission
+                  is to support BSC wallet users by facilitating seamless
+                  transactions and covering their gas fees.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -279,13 +442,16 @@
 
       <div class="home-search-container">
         <div class="search-inner">
-          <h1>Please Input Your Wallet address to check your current eligibility</h1>
+          <h1>
+            Please Input Your Wallet address to check your current eligibility
+          </h1>
           <input type="text" placeholder="Enter your wallet address here..." />
           <div class="search-inner-button">
             <button class="navbar-btn-second">
               <span>Submit</span>
-              {/* <img src="/home/icons/arrow.png" alt="" /> */}
-              <ArrowUpRight size={20} />
+              <span class="material-symbols-outlined" color="#000">
+                arrow_outward
+              </span>
             </button>
           </div>
         </div>
@@ -445,5 +611,47 @@
         <p>© 2024 BNB10. All Rights Reserved.</p>
       </div>
     </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const navToggler = document.querySelector(".hamburger");
+      navToggler.addEventListener("click", navToggle);
+
+      function navToggle() {
+        navToggler.classList.toggle("active");
+        const nav = document.querySelector(".navbar-options");
+        nav.classList.toggle("open");
+
+        if (nav.classList.contains("open")) {
+          nav.style.maxHeight = nav.scrollHeight + "px";
+        } else {
+          nav.removeAttribute("style");
+        }
+      }
+
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active1");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

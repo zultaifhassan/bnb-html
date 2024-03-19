@@ -6,6 +6,8 @@
     <title>Earning</title>
     <link rel="stylesheet" href="../Home/home.css" />
     <link rel="stylesheet" href="wallet.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <div class="navbar-container">
@@ -15,7 +17,7 @@
             <a href="/Home/Home.html">
               <img src="/Images/logo.png" alt="" />
             </a>
-            <div class="navbar-options" ref="{navRef}">
+            <div class="navbar-options">
               <ul>
                 <li>
                   <a href="/Home/Home.html"> Home </a>
@@ -27,18 +29,26 @@
                   <a href="/Earning/Earning.html"> Earnings </a>
                 </li>
               </ul>
-              <X class="hamberger-close" color="#fff" size="{15}" />
+              <span class="material-symbols-outlined hamberger-close">
+                close
+                </span>
             </div>
           </div>
           <div class="navbar-right">
             <button class="navbar-btn-first">Contact Us</button>
             <button class="navbar-btn-second">
               <span>Start Building</span>
-              <!-- {/* <img src="/home/icons/arrow.png" alt="" /> */} -->
-              <!-- <ArrowUpRight size="{20}" /> -->
+              <span class="material-symbols-outlined" color="#000">
+                arrow_outward
+                </span>
             </button>
           </div>
-          <AlignJustify class="hamburger" color="#fff" />
+          <!-- <span class="material-symbols-outlined hamburger">
+            menu
+            </span> -->
+            <button type="button" class="hamburger">
+              <span></span>
+          </button>
         </nav>
       </div>
     </div>
@@ -355,5 +365,26 @@
         <p>© 2024 BNB10. All Rights Reserved.</p>
       </div>
     </div>
+
+    <script>
+
+      const navToggler = document.querySelector(".hamburger");
+      navToggler.addEventListener("click", navToggle);
+      
+      function navToggle() {
+          navToggler.classList.toggle("active");
+          const nav = document.querySelector(".navbar-options");
+          nav.classList.toggle("open");
+      
+          if (nav.classList.contains("open")) {
+              nav.style.maxHeight = nav.scrollHeight + "px";
+          }
+          else {
+              nav.removeAttribute("style")
+          }
+      
+      }
+      
+        </script>
   </body>
 </html>

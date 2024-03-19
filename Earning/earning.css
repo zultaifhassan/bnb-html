@@ -1,696 +1,983 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
 .first-sec-earning {
-    display: flex;
-    justify-content: space-between;
-    padding: 60px 100px;
-    gap: 33px;
-  }
-  
-  .first-sec-leftside {
-    width: 880px;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 100px;
+  gap: 33px;
+}
+
+.first-sec-leftside {
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.genstatictics-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genstatictics-side h1 {
+  font-family: Space Grotesk;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+}
+
+.genstatictics-side button {
+  background: #cccccc;
+  width: 193px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999999;
+}
+
+.genstatictics-side button:hover {
+  background: #ffdd2d;
+  color: #000;
+  cursor: pointer;
+}
+
+.genstatictics-boxes {
+  display: flex;
+  gap: 20px;
+}
+
+.genstatictics-boxes-1 {
+  border: 0.3px solid #ffdd2d;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(153, 153, 153, 0.05) 100%
+  );
+  width: 280px;
+  height: 155px;
+  border-radius: 22px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  color: #eeeeee;
+}
+
+.genstatictics-boxes-1 h3 {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+}
+
+.genstatictics-boxes-1 h2 {
+  font-family: Space Grotesk;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: 0px;
+  color: #eeeeee;
+}
+
+.amount-and-arrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount-and-arrow img {
+  width: 15px;
+  height: 10px;
+}
+
+.first-sec-rightside {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(153, 153, 153, 0.05) 100%
+  );
+  border: 0.3px solid #ffdd2d;
+  height: 267px;
+  padding: 20px 30px;
+  border-radius: 22px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.right-side-walletaddress {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.right-side-walletaddress h3 {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.right-side-walletaddress p {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffdd2d;
+}
+
+.right-side-walletavailable {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.right-side-walletavailable p {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+
+.right-side-walletavailable h3 {
+  font-family: Space Grotesk;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 51px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #fff;
+}
+
+.right-side-walletavailable button {
+  background: #ffdd2d;
+  width: 193px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000;
+}
+
+.right-side-walletavailable button:hover {
+  background: transparent;
+  color: #fff;
+  border: 0.5px solid #ffdd2d;
+  cursor: pointer;
+}
+
+/* Styling of Second section Slider */
+
+.second-sec-earningslider {
+  display: flex;
+  padding: 0px 35px 40px 100px;
+  gap: 30px;
+  /* width: 1200px; */
+  justify-content: space-between;
+}
+
+.second-sec-rightside {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(153, 153, 153, 0.05) 100%
+  );
+  border: 0.3px solid #ffdd2d;
+  width: 381px;
+  height: 514px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.session-timer {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-timer p {
+  font-family: Space Grotesk;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: #eeeeee;
+}
+
+.center-timing-number {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  color: #eeeeee;
+}
+
+.center-timing-number h1 {
+  font-family: Space Grotesk;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 82px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #eeeeee;
+}
+
+.hour-minutes-seconds {
+  display: flex;
+  gap: 40px;
+  color: #eeeeee;
+}
+
+.hour-minutes-seconds p {
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0px;
+  color: #eeeeee;
+}
+
+.center-timing-number h5 {
+  font-family: Space Grotesk;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0px;
+  margin-top: 10px;
+}
+
+.second-sec-rightside button {
+  width: 321px;
+  height: 48px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #ffdd2d;
+  font-family: Space Grotesk;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #121212;
+}
+
+.second-sec-rightside button:hover {
+  background: transparent;
+  color: #fff;
+  border: 0.5px solid #ffdd2d;
+  cursor: pointer;
+}
+
+.second-sec-leftside {
+  width: 860px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.second-sec-leftside h2 {
+  font-family: Space Grotesk;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1.9673993587493896px;
+  color: #eeeeee;
+}
+
+/* Styling of third ads section */
+
+.third-sec-adserning {
+  width: 100%;
+  height: 288px;
+  background: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.third-sec-adserning h1 {
+  font-family: Space Grotesk;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 82px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #222222;
+}
+
+/* fourth section styling table of earning */
+
+.fouth-section-earningtable {
+  padding: 50px 100px;
+  background: #1c1c1c;
+}
+
+.fouth-section-earningtable h1 {
+  font-family: Space Grotesk;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 1.9673993587493896px;
+  color: #eeeeee;
+  margin-bottom: 20px;
+}
+
+.main-table-earningpage {
+  width: 100%;
+  background-color: red;
+  border-radius: 10px;
+  background: #222222;
+}
+
+.main-table-earningpage table {
+  border-collapse: collapse;
+}
+
+.main-table-earningpage table tr:nth-child(even) {
+  background: #333333;
+  width: 100%;
+}
+
+.main-table-earningpage table tr th {
+  padding: 15px 10px 15px 20px;
+  width: 210px;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.0033em;
+  text-align: left;
+  color: #fff;
+}
+
+.main-table-earningpage table tr td {
+  padding: 15px 30px 15px 20px;
+  color: #cccccc;
+}
+
+.main-table-earningpage table tr td button {
+  width: 78px;
+  height: 29px;
+  padding: 5px, 20px, 5px, 20px;
+  border-radius: 5px;
+  border: 0.5px solid #ffdd2d;
+  color: #ffdd2d;
+  cursor: pointer;
+  background: transparent;
+  gap: 10px;
+}
+.third-sec-adserning-outer {
+  background: #d9d9d9;
+}
+
+.fouth-section-outer {
+  background: #1c1c1c;
+}
+
+.main-table-earningpage table tr td span {
+  background: #3ad8964d;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: #3ad896;
+}
+
+.date-recieved {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.date-recieved p {
+  display: none;
+}
+
+.date-recieved h6 {
+  color: #ffdd2d;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+}
+
+.faq-earning-page {
+  background-color: #121212;
+}
+
+/* Responsiveness of Eraning page */
+
+@media (max-width: 430px) {
+  .first-sec-earning {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    flex-flow: column-reverse;
+    padding: 40px 20px 20px 20px;
   }
-  
-  .genstatictics-side {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  .first-sec-leftside {
+    gap: 20px;
+    width: 100%;
   }
-  
+
   .genstatictics-side h1 {
     font-family: Space Grotesk;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 46px;
+    line-height: 26px;
     letter-spacing: 0px;
-    text-align: center;
-    color: #fff;
   }
-  
-  
+
   .genstatictics-side button {
-    background: #CCCCCC;
-    width: 193px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 100px;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #999999;
-  
+    display: none;
   }
-  
-  .genstatictics-side button:hover {
-    background: #ffdd2d;
-    color: #000;
-    cursor: pointer;
-  }
-  
+
   .genstatictics-boxes {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .genstatictics-boxes-1 {
-    border: 0.3px solid #FFDD2D;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(153, 153, 153, 0.05) 100%);
-    width: 280px;
-    height: 155px;
-    border-radius: 22px;
-    gap: 20px;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
-    color: #EEEEEE;
-  
+    gap: 20px;
+    width: 100%;
   }
-  
+
+  .genstatictics-boxes-1 {
+    width: 100%;
+    height: 120px;
+  }
+
   .genstatictics-boxes-1 h3 {
     font-family: Space Grotesk;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 26px;
+    line-height: 19px;
     letter-spacing: 0px;
-  
   }
-  
+
   .genstatictics-boxes-1 h2 {
     font-family: Space Grotesk;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 46px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
     letter-spacing: 0px;
-    color: #EEEEEE;
   }
-  
-  .amount-and-arrow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .amount-and-arrow img {
-    width: 15px;
-    height: 10px;
-  }
-  
+
   .first-sec-rightside {
-    background: linear-gradient(180deg,
-        rgba(255, 255, 255, 0.05) 0%,
-        rgba(153, 153, 153, 0.05) 100%);
-    border: 0.3px solid #ffdd2d;
-    height: 267px;
     padding: 20px 30px;
-    border-radius: 22px;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  
+    height: 245px;
   }
-  
-  .right-side-walletaddress {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-  
+
   .right-side-walletaddress h3 {
     font-family: Space Grotesk;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
-    color: #fff;
   }
-  
+
   .right-side-walletaddress p {
     font-family: Space Grotesk;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 15px;
     letter-spacing: 0em;
-    text-align: left;
-    color: #ffdd2d;
   }
-  
-  .right-side-walletavailable {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+
   .right-side-walletavailable p {
     font-family: Space Grotesk;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 19px;
     letter-spacing: 0em;
-    text-align: left;
-    color: #fff;
   }
-  
+
   .right-side-walletavailable h3 {
     font-family: Space Grotesk;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 51px;
+    line-height: 31px;
     letter-spacing: 0.03em;
-    text-align: left;
-    color: #fff;
   }
-  
+
   .right-side-walletavailable button {
-    background: #ffdd2d;
-    width: 193px;
-    height: 40px;
-    padding: 10px;
-    border-radius: 100px;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-family: Space Grotesk;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    line-height: 18px;
+    line-height: 15px;
     letter-spacing: 0em;
     text-align: left;
-    color: #000;
-  
+    margin-top: 10px;
   }
-  
-  .right-side-walletavailable button:hover {
-    background: transparent;
-    color: #fff;
-    border: .5px solid #ffdd2d;
-    cursor: pointer;
-  }
-  
-  /* Styling of Second section Slider */
-  
-  .second-sec-earningslider {
-    display: flex;
-    padding: 0px 50px 40px 100px;
-    gap: 30px;
-    /* width: 1200px; */
-    justify-content: space-between;
-  }
-  
+
   .second-sec-rightside {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(153, 153, 153, 0.05) 100%);
-    border: 0.3px solid #FFDD2D;
-    width: 381px;
-    height: 514px;
-    border-radius: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    justify-content: center;
-    align-items: center;
-  
+    width: 100%;
+    height: 280px;
+    gap: 30px;
   }
-  
+
   .session-timer {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-    align-items: center;
-    justify-content: center;
+    gap: 10px;
   }
-  
+
   .session-timer p {
     font-family: Space Grotesk;
     font-size: 20px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0px;
-    color: #EEEEEE;
+    text-align: left;
   }
-  
-  .center-timing-number {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: center;
-    color: #EEEEEE;
-  }
-  
+
   .center-timing-number h1 {
     font-family: Space Grotesk;
-    font-size: 64px;
+    font-size: 40px;
     font-weight: 500;
-    line-height: 82px;
+    line-height: 51px;
     letter-spacing: 0px;
     text-align: center;
-    color: #EEEEEE;
   }
-  
-  .hour-minutes-seconds {
-    display: flex;
-    gap: 40px;
-    color: #EEEEEE;
-  }
-  
-  .hour-minutes-seconds p {
-    font-family: Space Grotesk;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0px;
-    color: #EEEEEE;
-  }
-  
+
   .center-timing-number h5 {
     font-family: Space Grotesk;
-    font-size: 18px;
+    font-size: 11px;
     font-weight: 500;
-    line-height: 23px;
+    line-height: 14px;
     letter-spacing: 0px;
-    margin-top: 10px;
+    text-align: left;
   }
-  
+
   .second-sec-rightside button {
-    width: 321px;
-    height: 48px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    background: #FFDD2D;
+    max-width: 220px;
+  }
+
+  .hour-minutes-seconds {
+    gap: 25px;
+  }
+
+  .hour-minutes-seconds p {
     font-family: Space Grotesk;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    line-height: 18px;
-    letter-spacing: 0em;
-    color: #121212;
-  
+    line-height: 14px;
+    letter-spacing: 0px;
+    text-align: left;
   }
-  
-  .second-sec-rightside button:hover {
-    background: transparent;
-    color: #fff;
-    border: .5px solid #ffdd2d;
-    cursor: pointer;
-  }
-  
-  .second-sec-leftside {
-    width: 860px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
+
   .second-sec-leftside h2 {
     font-family: Space Grotesk;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 1.9673993587493896px;
-    color: #EEEEEE;
-  
+    line-height: 26px;
+    letter-spacing: 0px;
+    margin-bottom: 10px;
   }
-  
-  
-  /* Styling of third ads section */
-  
-  .third-sec-adserning {
+
+  .second-sec-earningslider {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    padding: 20px;
+  }
+
+  .second-sec-leftside {
     width: 100%;
-    height: 288px;
-    background: #D9D9D9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
+
+  .third-sec-adserning {
+    height: 152px;
+  }
+
   .third-sec-adserning h1 {
     font-family: Space Grotesk;
-    font-size: 64px;
+    font-size: 24px;
     font-weight: 700;
-    line-height: 82px;
+    line-height: 31px;
     letter-spacing: 0px;
     text-align: center;
-    color: #222222;
   }
-  
-  /* fourth section styling table of earning */
-  
+
   .fouth-section-earningtable {
-    padding: 50px 100px;
-    background: #1C1C1C;
-  }
-  
-  .fouth-section-earningtable h1 {
-    font-family: Space Grotesk;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 38px;
-    letter-spacing: 1.9673993587493896px;
-    color: #EEEEEE;
-    margin-bottom: 20px;
-  
-  }
-  
-  .main-table-earningpage {
-    width: 100%;
-    background-color: red;
-    border-radius: 10px;
-    background: #222222;
-  }
-  
-  .main-table-earningpage table {
-    border-collapse: collapse;
-  }
-  
-  .main-table-earningpage table tr:nth-child(even) {
-    background: #333333;
+    padding: 46px 10px 20px 20px;
     width: 100%;
   }
-  
-  .main-table-earningpage table tr th {
-    padding: 15px 10px 15px 20px;
-    width: 210px;
-    font-family: Space Grotesk;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.0033em;
-    text-align: left;
-    color: #fff;
-  }
-  
-  .main-table-earningpage table tr td {
-    padding: 15px 30px 15px 20px;
-    color: #CCCCCC;
-  }
-  
-  .main-table-earningpage table tr td button {
-    width: 78px;
-    height: 29px;
-    padding: 5px, 20px, 5px, 20px;
-    border-radius: 5px;
-    border: 0.5px solid #FFDD2D;
-    color: #ffdd2d;
-    cursor: pointer;
+
+  .fouth-section-earningtable {
     background: transparent;
-    gap: 10px;
-  
   }
-  .third-sec-adserning-outer {
-    background: #D9D9D9;
-  
-  }
-  
-  .fouth-section-outer {
-    background: #1C1C1C;
-  
-  }
-  
-  .main-table-earningpage table tr td span {
-    background: #3AD8964D;
-    padding: 5px 10px;
-    border-radius: 20px;
-    color: #3AD896;
-    ;
-  }
-  
-  .date-recieved {
-    display: flex;
-    gap: 5px;
-    flex-direction: column;
-  }
-  
+
   .date-recieved p {
-    display: none;
+    display: block;
   }
-  
+
   .date-recieved h6 {
-    color: #FFDD2D;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 22px;
     letter-spacing: 0.30000001192092896px;
     text-align: left;
-  
   }
-  
-  .faq-earning-page {
-    background-color: #121212;
+
+  .main-table-time,
+  .recieved-batch {
+    display: none;
   }
-  
-  /* Responsiveness of Eraning page */
-  
-  @media (max-width: 430px) {
-    .first-sec-earning {
-      display: flex;
-      flex-direction: column;
-      flex-flow: column-reverse;
-      padding: 40px 20px 20px 20px;
-    }
-  
-    .first-sec-leftside {
-      gap: 20px;
-      width: 100%;
-    }
-  
-    .genstatictics-side h1 {
-      font-family: Space Grotesk;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 26px;
-      letter-spacing: 0px;
-  
-    }
-  
-    .genstatictics-side button {
-      display: none;
-    }
-  
-    .genstatictics-boxes {
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
-    }
-  
-    .genstatictics-boxes-1 {
-      width: 100%;
-      height: 120px;
-    }
-  
-    .genstatictics-boxes-1 h3 {
-      font-family: Space Grotesk;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: 0px;
-  
-    }
-  
-    .genstatictics-boxes-1 h2 {
-      font-family: Space Grotesk;
-      font-size: 22px;
-      font-weight: 700;
-      line-height: 28px;
-      letter-spacing: 0px;
-    }
-  
-    .first-sec-rightside {
-      padding: 20px 30px;
-      height: 245px;
-    }
-  
-    .right-side-walletaddress h3 {
-      font-family: Space Grotesk;
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 20px;
-      letter-spacing: 0em;
-    }
-  
-    .right-side-walletaddress p {
-      font-family: Space Grotesk;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 15px;
-      letter-spacing: 0em;
-  
-    }
-  
-    .right-side-walletavailable p {
-      font-family: Space Grotesk;
-      font-size: 15px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: 0em;
-    }
-  
-    .right-side-walletavailable h3 {
-      font-family: Space Grotesk;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 31px;
-      letter-spacing: 0.03em;
-    }
-  
-    .right-side-walletavailable button {
-      font-family: Space Grotesk;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 15px;
-      letter-spacing: 0em;
-      text-align: left;
-      margin-top: 10px;
-  
-    }
-  
-  
-    .second-sec-rightside {
-      width: 100%;
-      height: 280px;
-      gap: 30px;
-    }
-  
-    .session-timer {
-      gap: 10px;
-    }
-  
-    .session-timer p {
-      font-family: Space Grotesk;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 26px;
-      letter-spacing: 0px;
-      text-align: left;
-  
-    }
-  
-    .center-timing-number h1 {
-      font-family: Space Grotesk;
-      font-size: 40px;
-      font-weight: 500;
-      line-height: 51px;
-      letter-spacing: 0px;
-      text-align: center;
-  
-    }
-  
-    .center-timing-number h5 {
-      font-family: Space Grotesk;
-      font-size: 11px;
-      font-weight: 500;
-      line-height: 14px;
-      letter-spacing: 0px;
-      text-align: left;
-  
-    }
-  
-    .second-sec-rightside button {
-      max-width: 220px;
-    }
-  
-    .hour-minutes-seconds {
-      gap: 25px;
-    }
-  
-    .hour-minutes-seconds p {
-      font-family: Space Grotesk;
-      font-size: 11px;
-      font-weight: 500;
-      line-height: 14px;
-      letter-spacing: 0px;
-      text-align: left;
-  
-    }
-  
-    .second-sec-leftside h2 {
-      font-family: Space Grotesk;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 26px;
-      letter-spacing: 0px;
-      margin-bottom: 10px;
-    }
-  
-    .second-sec-earningslider {
-      flex-direction: column;
-      flex-flow: column-reverse;
-      padding: 20px;
-    }
-  
-    .second-sec-leftside {
-      width: 100%;
-    }
-  
-    .third-sec-adserning {
-      height: 152px;
-    }
-  
-    .third-sec-adserning h1 {
-      font-family: Space Grotesk;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 31px;
-      letter-spacing: 0px;
-      text-align: center;
-  
-    }
-  
-    .fouth-section-earningtable {
-      padding: 46px 10px 20px 20px;
-      width: 100%;
-    }
-  
-    .fouth-section-earningtable {
-      background: transparent;
-    }
-  
-    .date-recieved p {
-      display: block;
-  
-    }
-  
-    .date-recieved h6 {
-      font-family: Inter;
-      font-size: 14px;
-      font-weight: 600;
-      line-height: 22px;
-      letter-spacing: 0.30000001192092896px;
-      text-align: left;
-  
-    }
-  
-    .main-table-time,
-    .recieved-batch {
-      display: none;
-    }
-  
-    .main-table-earningpage {
-      width: 100%;
-    }
-    .main-table-earningpage table tr th {
-      padding: 8px 10px;
-      max-width: 150px;
-      font-size: 14px;
-  
-    }
-  
-    .main-table-earningpage table tr td {
-      padding: 7px 10px;
-      font-size: 14px;
-    }
-  
-    .fouth-section-earningtable h1 {
-      font-family: Space Grotesk;
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 26px;
-      letter-spacing: 0px;
-    }
+
+  .main-table-earningpage {
+    width: 100%;
   }
+  .main-table-earningpage table tr th {
+    padding: 8px 10px;
+    max-width: 150px;
+    font-size: 14px;
+  }
+
+  .main-table-earningpage table tr td {
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+
+  .fouth-section-earningtable h1 {
+    font-family: Space Grotesk;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0px;
+  }
+}
+
+/* Slider Styling */
+
+.earning-Slider-main {
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 495px;
+  overflow: hidden;
+}
+
+.earning-slider-inner {
+  width: 100%;
+  height: 87%;
+}
+
+.earning-slider-inner .swiper {
+  position: static;
+  height: 100%;
+}
+
+.earning-slider-inner .swiper .swiper-slide {
+  height: 95%;
+  display: flex;
+  border-radius: 10px;
+  transition-duration: 1s;
+}
+
+.earning-slider-inner .swiper .swiper-button-next {
+  position: absolute;
+  right: 280px;
+  top: 458px;
+}
+
+.earning-slider-inner .swiper .swiper-button-next:after {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    height: 28px;
+    width: 40px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: 1px solid #FFDD2D;
+    border-radius: 100%;
+}
+
+.earning-slider-inner .swiper .swiper-button-prev {
+  position: absolute;
+  right: 10px;
+  left: 280px;
+  top: 458px;
+}
+
+.earning-slider-inner .swiper .swiper-button-prev:after {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  height: 28px;
+  width: 40px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  border: 1px solid #ffdd2d;
+  border-radius: 100%;
+}
+
+.earning-slider-inner .swiper .swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 30px !important;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 0px !important;
+  opacity: 1;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  background: transparent !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  border-bottom: 1px solid #ffdd2d;
+}
+
+.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  height: 40px;
+  width: 20% !important;
+  margin-left: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+}
+
+.earning-slider-content {
+  width: 100%;
+}
+.earning-slider-table {
+  width: 100%;
+}
+
+.earning-slider-table table {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background: #222222;
+  border-collapse: collapse;
+}
+
+.earning-slider-table table tr {
+  width: 100%;
+}
+
+.earning-slider-table table tr:nth-child(even) {
+  background: #333333;
+}
+
+.earning-slider-table tr th {
+  text-align: left;
+  color: #ffff;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.0033em;
+  text-align: left;
+  padding: 15px 20px;
+}
+
+.earning-slider-table tr td {
+  text-align: left;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.0033em;
+  text-align: left;
+  padding: 10px 20px;
+}
+
+.date-of-table {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  color: #ffdd2d;
+}
+
+.date-of-table span {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  display: none;
+}
+
+.coin-icon-table {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.percentage-of-day {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.30000001192092896px;
+  text-align: left;
+  color: #cd071e;
+}
+
+.amount-of-table {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.30000001192092896px;
+  color: #cccccc;
+}
+
+.activity-active span {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.0033em;
+  text-align: left;
+}
+
+.activity-active p {
+  display: none;
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.0033em;
+  text-align: left;
+}
+
+@media (max-width: 430px) {
+  .earning-slider-content {
+    width: 100%;
+  }
+
+  .earning-slider-table {
+    width: 100%;
+  }
+
+  .earning-slider-table tr th {
+    padding: 8px 5px 8px 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .earning-slider-table tr td {
+    padding: 7px 10px 7px 10px;
+    width: 100px !important;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .earning-slider-table tr td:nth-child(1) {
+    text-align: left;
+  }
+
+  .table-head-coin {
+    display: none;
+  }
+
+  .date-of-table span {
+    display: block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.30000001192092896px;
+    text-align: left;
+    color: #cccccc;
+    display: flex;
+  }
+
+  .earning-slider-inner .swiper .swiper-button-next {
+    position: absolute;
+    right: 20px;
+    top: 448px;
+  }
+
+  .earning-slider-inner .swiper .swiper-button-prev {
+    position: absolute;
+    right: 10px;
+    left: 20px;
+    top: 448px;
+  }
+
+  .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+    height: 40px;
+    width: 75% !important;
+    margin-left: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .activity-active span {
+    display: none;
+  }
+
+  .activity-active p {
+    display: block;
+  }
+}
