@@ -301,6 +301,17 @@ button {
   text-align: left;
 }
 
+.navbar-btn-second {
+  cursor: pointer;
+}
+.navbar-btn-second p {
+  font-family: Space Grotesk;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+}
+
 .home-banner-inner img.homepage-banner-image {
   position: absolute;
   top: 75px;
@@ -521,7 +532,7 @@ button {
   font-size: 18px;
   font-weight: 500;
   color: #cccc;
-  padding: 25px 25px;
+  padding: 20px 25px;
   cursor: pointer;
   font-family: "Space Grotesk", sans-serif;
   width: 100%;
@@ -818,6 +829,7 @@ button {
     border-radius: 10px !important;
     width: 100%;
     margin: auto;
+    margin-top: 15px;
   }
 
   .faq-inner-detail p {
@@ -828,6 +840,7 @@ button {
     text-align: left !important;
     color: #eeeeee;
     width: 80%;
+    padding-bottom: 5px !important;
   }
 
   .accordion {
@@ -838,6 +851,7 @@ button {
     letter-spacing: 0.02em;
     text-align: left;
     gap: 50px;
+    padding: 15px;
   }
   .faq-outer-container {
     padding: 30px 10px;
