@@ -597,16 +597,16 @@
 
           <div class="footer-social-icons">
             <a>
-              <img src="/home/icons/x.png" alt="" />
+              <img src="/Images/Footer/x.png" alt="" />
             </a>
             <a>
-              <img src="/home/icons/fb.svg" alt="" />
+              <img src="/Images/Footer/fb.svg" alt="" />
             </a>
             <a>
-              <img src="/home/icons/insta.svg" alt="" />
+              <img src="/Images/Footer/insta.svg" alt="" />
             </a>
             <a>
-              <img src="/home/icons/linkedIn.svg" alt="" />
+              <img src="/Images/Footer/linkedIn.svg" alt="" />
             </a>
           </div>
         </div>
@@ -672,6 +672,22 @@ function navToggle() {
         },
       },
     });
+
+
+    var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active1");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
     </script>
   </body>
 </html>

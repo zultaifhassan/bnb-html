@@ -43,6 +43,7 @@
   align-items: center;
   justify-content: center;
   color: #999999;
+  border: none;
 }
 
 .genstatictics-side button:hover {
@@ -187,12 +188,13 @@
   letter-spacing: 0em;
   text-align: left;
   color: #000;
+  border: none !important;
 }
 
 .right-side-walletavailable button:hover {
   background: transparent;
   color: #fff;
-  border: 0.5px solid #ffdd2d;
+  border: 0.5px solid #ffdd2d !important;
   cursor: pointer;
 }
 
@@ -297,6 +299,7 @@
   line-height: 18px;
   letter-spacing: 0em;
   color: #121212;
+  border: none;
 }
 
 .second-sec-rightside button:hover {
